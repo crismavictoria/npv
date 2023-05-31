@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Net Present Value Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    #results {
+      margin-top: 20px;
+    }
+
+    #results table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    #results th,
+    #results td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Net Present Value Calculator</h1>
+  <div>
+    <label for="lowerBound">Lower Bound Discount Rate (%):</label>
+    <input type="number" id="lowerBound" step="0.01" min="0" value="1">
+  </div>
+  <div>
+    <label for="upperBound">Upper Bound Discount Rate (%):</label>
+    <input type="number" id="upperBound" step="0.01" min="0" value="15">
+  </div>
+  <div>
+    <label for="increment">Discount Rate Increment (%):</label>
+    <input type="number" id="increment" step="0.01" min="0" value="0.25">
+  </div>
+  <button id="calculateBtn">Calculate</button>
+  <div id="results"></div>
+
+  <script src="app.js" ></script>
+</body>
+</html>
